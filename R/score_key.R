@@ -1,15 +1,15 @@
-#' score_key
+#' Score keywords
 #'
-#' @param i the first movie
-#' @param j the second movie
-#' @param keywords_matrix the keyword matrix with the movies
+#' @param i integer, the first movie index
+#' @param j integer, the second movie index
+#' @param keywords_matrix matrix, rows correspond to movies and entries are the keywords
 #'
-#' @return an integer
+#' @return an integer, the number of keywords in common
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#' score_key(i,j, keywords_matrix = matrix_movies2)
+#' score_key(1,4, keywords_matrix = matrix_movies2)
 #' }
 #'
 score_key <- function(i,j, keywords_matrix) {

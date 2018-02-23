@@ -2,26 +2,26 @@
 % Please edit documentation in R/movies_path.R
 \name{movies_path}
 \alias{movies_path}
-\title{Movie path}
+\title{Movies path}
 \usage{
 movies_path(names, movies_dataset, movies_graph)
 }
 \arguments{
-\item{names}{a vector filled with two movies}
+\item{names}{a vector filled with only two movie names}
 
-\item{movies_dataset}{a dataframe with all the movies (a column with the titles is used here)}
+\item{movies_dataset}{a dataframe with all the movies including a column with the titles}
 
-\item{movies_graph}{a network showing all the edges between the nodes/movies}
+\item{movies_graph}{a graph where vertices are movies and weighted edges between movies}
 }
 \value{
-a dataframe
+a dataframe with the shortest path between two movies
 }
 \description{
-Movie path
+Movies path
 }
 \examples{
 \dontrun{
-movies_path(names, movies_dataset = tmdb, movies_graph = graph)
+movies_path(c("Superman", "Batman"), movies_dataset = tmdb, movies_graph = graph)
 }
 
 }

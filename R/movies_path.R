@@ -1,16 +1,16 @@
-#' Movie path
+#' Movies path
 #'
-#' @param names a vector filled with two movies
-#' @param movies_dataset a dataframe with all the movies (a column with the titles is used here)
-#' @param movies_graph a network showing all the edges between the nodes/movies
+#' @param names a vector filled with only two movie names
+#' @param movies_dataset a dataframe with all the movies including a column with the titles
+#' @param movies_graph a graph where vertices are movies and weighted edges between movies
 #'
-#' @return a dataframe
+#' @return a dataframe with the shortest path between two movies
 #' @export
 #' @importFrom igraph shortest_paths
 #'
 #' @examples
 #' \dontrun{
-#' movies_path(names, movies_dataset = tmdb, movies_graph = graph)
+#' movies_path(c("Superman", "Batman"), movies_dataset = tmdb, movies_graph = graph)
 #' }
 #'
 movies_path <- function(names, movies_dataset, movies_graph) {

@@ -1,16 +1,16 @@
 #' Similarities function
 #'
-#' @param names a vector filled with two movies
-#' @param movies_dataset a dataframe with all the movies (a column with the titles is used here called "original_title")
-#' @param sim_matrix a matrix filled with the genres or keywords and the last column has the movie titles
+#' @param names a vector filled with only two movie names
+#' @param movies_dataset a dataframe with all the movies including a column with the titles
+#' @param sim_matrix a matrix with the genres or keywords and a column with the movie titles
 #'
-#' @return a list of genres in common
+#' @return a list, of genres or keywords in common
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#' similarities_genre(c("The Dark Knight Rises","Superman Returns"),tmdb,matrix_movies)
-#'
+#' similarities(c("The Dark Knight Rises","Superman Returns"),tmdb,matrix_movies)
+#' similarities(c("The Dark Knight Rises","Superman Returns"),tmdb,matrix_movies2)
 #' }
 #'
 similarities <- function(names, movies_dataset, sim_matrix) {

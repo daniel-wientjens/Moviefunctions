@@ -7,22 +7,22 @@
 similarities(names, movies_dataset, sim_matrix)
 }
 \arguments{
-\item{names}{a vector filled with two movies}
+\item{names}{a vector filled with only two movie names}
 
-\item{movies_dataset}{a dataframe with all the movies (a column with the titles is used here called "original_title")}
+\item{movies_dataset}{a dataframe with all the movies including a column with the titles}
 
-\item{sim_matrix}{a matrix filled with the genres or keywords and the last column has the movie titles}
+\item{sim_matrix}{a matrix with the genres or keywords and a column with the movie titles}
 }
 \value{
-a list of genres in common
+a list, of genres or keywords in common
 }
 \description{
 Similarities function
 }
 \examples{
 \dontrun{
-similarities_genre(c("The Dark Knight Rises","Superman Returns"),tmdb,matrix_movies)
-
+similarities(c("The Dark Knight Rises","Superman Returns"),tmdb,matrix_movies)
+similarities(c("The Dark Knight Rises","Superman Returns"),tmdb,matrix_movies2)
 }
 
 }

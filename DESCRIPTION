@@ -4,7 +4,8 @@ Title: This package contains 4 functions to calculate the shortest movie path us
 Version: 0.1.0
 Author: daniel wientjens
 Maintainer: daniel wientjens <daniel.wientjens@polytechnique.edu>
-Description: This package contains the score_key, score_genre, similarities and movie_path functions.
+Description: This package was solely built for the R-Project of Alessandro Girelli, Louis Limnavong and Daniel Wientjens.
+    This package contains the score_key, score_genre, similarities and movies_path functions.
     These can be used to calculate the shortest path from one movie to another based on genre and keywords.
     The functions score_key and score_genre are used to build a graph of movies.
     The functions similarities and movie_path are used to leverage the structure of a graph 

@@ -2,26 +2,26 @@
 % Please edit documentation in R/score_key.R
 \name{score_key}
 \alias{score_key}
-\title{score_key}
+\title{Score keywords}
 \usage{
 score_key(i, j, keywords_matrix)
 }
 \arguments{
-\item{i}{the first movie}
+\item{i}{integer, the first movie index}
 
-\item{j}{the second movie}
+\item{j}{integer, the second movie index}
 
-\item{keywords_matrix}{the keyword matrix with the movies}
+\item{keywords_matrix}{matrix, rows correspond to movies and entries are the keywords}
 }
 \value{
-an integer
+an integer, the number of keywords in common
 }
 \description{
-score_key
+Score keywords
 }
 \examples{
 \dontrun{
-score_key(i,j, keywords_matrix = matrix_movies2)
+score_key(1,4, keywords_matrix = matrix_movies2)
 }
 
 }

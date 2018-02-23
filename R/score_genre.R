@@ -1,15 +1,15 @@
-#' score_genre
+#' Score genre
 #'
-#' @param i the first movie
-#' @param j the second movie
+#' @param i integer, the first movie index
+#' @param j integer, the second movie index
 #' @param genre_matrix the matrix with all the genres and the movies
 #'
-#' @return an integer
+#' @return an integer, the number of genres in common
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#' score_genre <- function(i,j, genre_matrix)
+#' score_genre <- function(1,3, genre_matrix = matrix_movies)
 #' }
 score_genre <- function(i,j, genre_matrix) {
   vector_movies <- intersect(genre_matrix[i,], genre_matrix[j,])

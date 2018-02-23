@@ -2,25 +2,25 @@
 % Please edit documentation in R/score_genre.R
 \name{score_genre}
 \alias{score_genre}
-\title{score_genre}
+\title{Score genre}
 \usage{
 score_genre(i, j, genre_matrix)
 }
 \arguments{
-\item{i}{the first movie}
+\item{i}{integer, the first movie index}
 
-\item{j}{the second movie}
+\item{j}{integer, the second movie index}
 
 \item{genre_matrix}{the matrix with all the genres and the movies}
 }
 \value{
-an integer
+an integer, the number of genres in common
 }
 \description{
-score_genre
+Score genre
 }
 \examples{
 \dontrun{
-score_genre <- function(i,j, genre_matrix)
+score_genre <- function(1,3, genre_matrix = matrix_movies)
 }
 }
