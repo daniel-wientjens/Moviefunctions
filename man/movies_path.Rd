@@ -14,7 +14,7 @@ movies_path(names, movies_dataset, movies_graph)
 \item{movies_graph}{a network showing all the edges between the nodes/movies}
 }
 \value{
-a list
+a dataframe
 }
 \description{
 Movie path

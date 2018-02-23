@@ -4,7 +4,7 @@
 #' @param movies_dataset a dataframe with all the movies (a column with the titles is used here called "original_title")
 #' @param key_matrix a matrix filled with the keywords and the last column has the movie titles
 #'
-#' @return a list of the similar keywords between the two movies
+#' @return a list
 #' @export
 #'
 #' @examples

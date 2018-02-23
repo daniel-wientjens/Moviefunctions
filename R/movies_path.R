@@ -4,7 +4,7 @@
 #' @param movies_dataset a dataframe with all the movies (a column with the titles is used here)
 #' @param movies_graph a network showing all the edges between the nodes/movies
 #'
-#' @return a list
+#' @return a dataframe
 #' @export
 #' @importFrom igraph shortest_paths
 #'

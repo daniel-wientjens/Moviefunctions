@@ -14,7 +14,7 @@ similarities_key(names, movies_dataset, key_matrix)
 \item{key_matrix}{a matrix filled with the keywords and the last column has the movie titles}
 }
 \value{
-a list of the similar keywords between the two movies
+a list
 }
 \description{
 similarities_key

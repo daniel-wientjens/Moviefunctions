@@ -1,12 +1,14 @@
 Package: Moviefunctions
 Type: Package
-Title: this package contains some functions to calculate the shortest movie path
+Title: This package contains 4 functions to calculate the shortest movie path used in our R-project
 Version: 0.1.0
 Author: daniel wientjens
 Maintainer: daniel wientjens <daniel.wientjens@polytechnique.edu>
-Description: This package contains the score_key, score_genre and weight function.
-    These can be used to calculate the shortest path from one movie to 
-    another based on genre and keywords.
+Description: This package contains the score_key, score_genre, similarities and movie_path functions.
+    These can be used to calculate the shortest path from one movie to another based on genre and keywords.
+    The functions score_key and score_genre are used to build a graph of movies.
+    The functions similarities and movie_path are used to leverage the structure of a graph 
+    to get meaningfull information on the imput of movies.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
