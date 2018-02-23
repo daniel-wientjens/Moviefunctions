@@ -13,6 +13,9 @@ score_genre(i, j, genre_matrix)
 
 \item{genre_matrix}{the matrix with all the genres and the movies}
 }
+\value{
+an integer
+}
 \description{
 score_genre
 }

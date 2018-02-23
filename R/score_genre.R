@@ -4,7 +4,7 @@
 #' @param j the second movie
 #' @param genre_matrix the matrix with all the genres and the movies
 #'
-#' @return
+#' @return an integer
 #' @export
 #'
 #' @examples
